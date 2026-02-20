@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dovxelt3xn8oo"]
+
+[ext_resource type="Script" uid="uid://cclaxj1ir4jod" path="res://Escenas/movimientoPersonaje.gd" id="1_0a5x8"]
+[ext_resource type="Texture2D" uid="uid://diimveyt8dnxn" path="res://Temporal/personajeMIKE1-sheet.png" id="1_ly3pf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0a5x8"]
+size = Vector2(13, 25)
+
+[node name="Personaje" type="Node2D" unique_id=1598910890]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=972409705]
+script = ExtResource("1_0a5x8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=590426917]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_0a5x8")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1479822266]
+texture = ExtResource("1_ly3pf")
+hframes = 13
