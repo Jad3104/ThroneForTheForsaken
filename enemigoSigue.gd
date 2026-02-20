@@ -5,6 +5,7 @@ extends CharacterBody2D
 
 var target: Node2D
 
+@warning_ignore("unused_parameter")
 func _physics_process(delta):
 
 	# Buscar jugador cada frame si no existe o no es válido

@@ -3,6 +3,9 @@ extends CharacterBody2D
 const JUMP_VELOCITY = -400.0
 @export var maxSpeed=300
 
+func _ready():
+	add_to_group("player")
+
 func _physics_process(delta: float) -> void:
 	var input_vector=Vector2.ZERO
 	input_vector.x=Input.get_action_strength("ui_right")-Input.get_action_strength("ui_left")
@@ -13,9 +16,6 @@ func _physics_process(delta: float) -> void:
 		velocity=input_vector
 	else:
 		velocity = Vector2.ZERO
-	move_and_collide(velocity*delta*maxSpeed)
+	move_and_collide(velocity * delta * maxSpeed)
 	
-
-
-
 	move_and_slide()

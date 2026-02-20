@@ -11,10 +11,10 @@ size = Vector2(35, 47)
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=972409705]
 script = ExtResource("1_0a5x8")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=590426917]
-position = Vector2(4.5, -6.5)
-shape = SubResource("RectangleShape2D_0a5x8")
-
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1479822266]
 texture = ExtResource("2_0a5x8")
 hframes = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=590426917]
+position = Vector2(4.5, -6.5)
+shape = SubResource("RectangleShape2D_0a5x8")
