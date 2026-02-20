@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://4woh3f1c6632" path="res://Temporal/vikingo_caminando.png" id="2_0a5x8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0a5x8"]
-size = Vector2(31, 47)
+size = Vector2(35, 47)
 
 [node name="Personaje" type="Node2D" unique_id=1598910890]
 
@@ -12,9 +12,9 @@ size = Vector2(31, 47)
 script = ExtResource("1_0a5x8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=590426917]
-position = Vector2(6.5, -6.5)
+position = Vector2(4.5, -6.5)
 shape = SubResource("RectangleShape2D_0a5x8")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1479822266]
 texture = ExtResource("2_0a5x8")
-hframes = 13
+hframes = 11
