@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Throne for the Forsaken"
-run/main_scene="uid://dovxelt3xn8oo"
+run/main_scene="uid://btry3j7pdbhhc"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Assets/icon.svg"
 

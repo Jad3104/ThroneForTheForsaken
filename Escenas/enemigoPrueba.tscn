@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bisyi8oxb8qhl"]
+
+[ext_resource type="Script" uid="uid://d34ockue3ek14" path="res://enemigoSigue.gd" id="1_b7gpc"]
+[ext_resource type="Texture2D" uid="uid://c6qtm7jvh8ntu" path="res://Temporal/duende.png" id="2_sjq6j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_05tcx"]
+size = Vector2(27, 39)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1164593835]
+script = ExtResource("1_b7gpc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1907837328]
+texture = ExtResource("2_sjq6j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1180744543]
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_05tcx")
